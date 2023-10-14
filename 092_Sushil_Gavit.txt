@@ -1,0 +1,76 @@
+Q1 .
+
+package exam;
+
+ interface course {
+	public void start();
+	
+}
+
+ class Dac implements course {
+
+	public void start()
+	{
+		System.out.println("course started");
+	}
+}
+
+ class PgDbda implements course {
+
+	public void start()
+	{
+		System.out.println("course started");
+	}
+}
+
+ class MSCIT implements course {
+
+	public void start()
+	{
+		System.out.println("course started");
+	}
+}
+
+	
+public class CourseDemo {
+
+	public static void main(String[] args) {
+		course c[]=new course [3];
+		c[0]=new Dac();
+		c[1]=new PgDbda();
+		c[2]=new MSCIT();
+		
+		for (int i=0 ; i<c.length ; i++)
+		{
+			c[i].start();
+		}
+
+	}
+
+}
+
+-------------------------------------------------------------------------------------
+Q 2 . 
+package exam;
+
+public class first {
+	public static void main(String []arg)
+	{
+		for(int i=4;i>=1;i--) 
+		  {
+		      for(int j=1;j<=i;j++)
+		  {
+		     System.out.print(" "+j) ;
+		  }
+		  System.out.println();
+	}
+}
+}
+
+
+o/p  =  
+ 
+1 2 3 4
+ 1 2 3
+ 1 2
+ 1
